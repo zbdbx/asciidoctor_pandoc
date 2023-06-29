@@ -11,6 +11,8 @@ ARG PLATFORM=linux-amd64
 # 下载 pandoc 文件
 RUN curl -o pandoc-${PANDOC_VERSION}.tar.gz https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-${PLATFORM}.tar.gz
 
+RUN ls .
+
 # 解压 pandoc 文件
 RUN tar -xzf pandoc-${PANDOC_VERSION}.tar.gz -C /app \
     && rm -rf pandoc-${PANDOC_VERSION}.tar.gz \
