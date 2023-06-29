@@ -18,7 +18,7 @@ RUN wget -O pandoc-${PANDOC_VERSION}.tar.gz https://github.com/jgm/pandoc/releas
 RUN tar -xvf pandoc-${PANDOC_VERSION}.tar.gz \
  && rm -rf pandoc-${PANDOC_VERSION}.tar.gz \
  && mv pandoc-${PANDOC_VERSION} pandoc \
- && ln -s /usr/bin/pandoc /app/pandoc/pandoc
+ && ln -s /app/pandoc/bin/pandoc /usr/bin/pandoc
 
 # 查看解压后的文件列表
 # RUN ls /app
