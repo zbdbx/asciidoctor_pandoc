@@ -9,3 +9,7 @@ docker build -t asciidoctor_pandoc \
     .
 
 # docker push assicdoctor_pandoc
+
+# pdf字体：
+# asciidoctor-pdf -a pdf-style=theme.yml -a pdf-fontsdir=/data/fonts test.adoc
+# NotoSansCJK-Regular.ttc   NotoSerifCJK-Regular.ttc
