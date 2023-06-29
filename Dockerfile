@@ -9,6 +9,8 @@ ARG PLATFORM=linux-amd64
 ENV PANDOC_VERSION=${PANDOC_VERSION}
 ENV PLATFORM=${PLATFORM}
 
+COPY chinese-font-theme.yml /data/
+
 #https://github.com/jgm/pandoc/releases/tag/3.1.4
 # ADD https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-${PLATFORM}.tar.gz /app/
 
